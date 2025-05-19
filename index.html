@@ -7,28 +7,32 @@
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to right, #d1e231, #b6d655);
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #b6d655, #d1e231);
       color: #1b2d00;
+      text-align: center;
     }
 
     header {
       background-color: #2e7d32;
       color: white;
-      text-align: center;
       padding: 40px 20px;
     }
 
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-      letter-spacing: 1px;
+    header img {
+      max-height: 100px;
+      margin-bottom: 10px;
     }
 
-    header p {
-      margin: 10px 0 0;
+    h1 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+
+    p.tagline {
       font-size: 1.2em;
       font-weight: bold;
+      margin-top: 10px;
     }
 
     .section {
@@ -39,18 +43,20 @@
 
     .section h2 {
       color: #2e7d32;
+      margin-bottom: 10px;
     }
 
-    .section ul {
-      list-style-type: "✔ ";
-      padding-left: 20px;
-    }
-
-    .highlight-box {
-      background-color: #ffffffbb;
+    .box {
+      background-color: #ffffffcc;
       padding: 20px;
       border-radius: 10px;
-      margin-top: 20px;
+      margin: 20px 0;
+      text-align: left;
+    }
+
+    ul {
+      list-style-type: "✔ ";
+      padding-left: 20px;
     }
 
     .qr-image {
@@ -59,35 +65,29 @@
       max-width: 180px;
     }
 
-    .contact-box {
-      background-color: #a5d6a7;
-      padding: 15px;
-      border-radius: 10px;
-      margin-top: 30px;
-    }
-
     footer {
-      text-align: center;
+      margin-top: 30px;
       padding: 20px;
+      background-color: #c5e1a5;
       font-size: 0.9em;
-      color: #4a4a4a;
     }
   </style>
 </head>
 <body>
   <header>
+    <img src="hexe.png" alt="Hexe auf Fahrrad" />
     <h1>WITCH BIKE</h1>
-    <p>Pilotprojekt Hochschule Harz</p>
-    <p>DEIN RAD. DEIN WEG. <br> NACHHALTIG. SCHNELL. FLEXIBEL.</p>
+    <p class="tagline">Pilotprojekt Hochschule Harz</p>
+    <p class="tagline">DEIN RAD. DEIN WEG. <br> NACHHALTIG. SCHNELL. FLEXIBEL.</p>
   </header>
 
   <div class="section">
-    <div class="highlight-box">
+    <div class="box">
       <h2>SEI TESTER*IN UNSERES BIKE SHARING SYSTEMS</h2>
       <p><strong>Nur für Android-Nutzer*innen</strong></p>
     </div>
 
-    <div class="highlight-box">
+    <div class="box">
       <h2>WORUM GEHT'S?</h2>
       <ul>
         <li>Neue App im Aufbau</li>
@@ -96,7 +96,7 @@
       </ul>
     </div>
 
-    <div class="highlight-box">
+    <div class="box">
       <h2>Witch Bike – DAS STECKT DAHINTER:</h2>
       <h3>WAS IST DAS?</h3>
       <p>Witch Bike ist ein Pilotprojekt des KlimaPlanReal zur nachhaltigen Mobilität. Ziel ist es, den Weg vom Bahnhof zur Hochschule klimafreundlicher und flexibler zu gestalten.</p>
@@ -115,7 +115,7 @@
       </ul>
     </div>
 
-    <div class="highlight-box">
+    <div class="box">
       <h2>DAS WIRST DU BRAUCHEN:</h2>
       <ul>
         <li>Smartphone (Nur Android)</li>
@@ -124,13 +124,13 @@
       </ul>
     </div>
 
-    <div class="highlight-box">
+    <div class="box">
       <h2>JETZT MITMACHEN</h2>
       <p>Scanne den QR Code und melde dich als Tester an:</p>
       <img class="qr-image" src="qr-code-1.png" alt="QR Code zur Anmeldung" />
     </div>
 
-    <div class="contact-box">
+    <div class="box">
       <h2>JETZT ANMELDEN</h2>
       <p><strong>Ansprechpartner:</strong> Max Mustermann</p>
       <p><strong>Email:</strong> mmustermann@hs-harz.de</p>

@@ -55,6 +55,15 @@
       transition: background 0.3s ease;
     }
 
+    .button.disabled {
+      background-color: #555555;
+      color: lightgray
+    }
+
+    .button.disabled:hover {
+      background-color: #555555;
+    }
+
     .button:hover {
       background-color: #558b2f;
     }
@@ -91,7 +100,8 @@
     Witch Bike ist ein Pilotprojekt für klimafreundliche Mobilität zwischen Bahnhof und Hochschule. Teste das neue Bike-Sharing-System – exklusiv für Android-Nutzer*innen.
   </p>
 
-  <a class="button" href="#">App jetzt herunterladen</a>
+  <!-- <a type="button" class="button disabled" href="#">App jetzt herunterladen</a> //-->
+  <a type="button" class="button disabled" href="#">App bald verfügbar</a> 
 
   <p class="more-info">
     Wenn ihr mehr über das Projekt erfahren wollt, findet ihr Informationen auf der offiziellen Website des KlimaPlanReal:<br>

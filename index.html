@@ -8,7 +8,7 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to bottom right, #b7e283, #d1ea71);
+      background-color: #d1ea71;
       color: #1a3e14;
       text-align: center;
     }
@@ -35,52 +35,38 @@
       color: #4d7c1b;
     }
 
-    .summary {
-      font-size: 1.2em;
-      max-width: 600px;
-      margin: 0 auto 30px;
-      color: #2c2c2c;
+    .content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: left;
     }
 
-    .button {
-      background-color: #66bb6a;
-      color: white;
-      font-size: 1.2em;
-      padding: 15px 30px;
-      border: none;
-      border-radius: 8px;
-      text-decoration: none;
-      display: inline-block;
+    .section {
       margin-bottom: 30px;
-      transition: background 0.3s ease;
     }
 
-    .button.disabled {
-      background-color: #555555;
-      color: lightgray
+    .section h3 {
+      color: #2e7d32;
+      margin-top: 0;
     }
 
-    .button.disabled:hover {
-      background-color: #555555;
+    .logos {
+      background: white;
+      padding: 30px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
     }
 
-    .button:hover {
-      background-color: #558b2f;
-    }
-
-    .more-info {
-      font-size: 1em;
-      margin-top: 30px;
-      color: #1b3d17;
-    }
-
-    .more-info a {
-      color: #33691e;
-      text-decoration: underline;
+    .logos img {
+      max-height: 80px;
+      height: auto;
     }
 
     footer {
-      margin-top: 40px;
+      margin-top: 20px;
       padding: 20px;
       font-size: 0.9em;
       background-color: #e6f5d6;
@@ -96,17 +82,60 @@
     <h2>DEIN RAD. DEIN WEG.<br>NACHHALTIG. SCHNELL. FLEXIBEL.</h2>
   </header>
 
-  <p class="summary">
-    Witch Bike ist ein Pilotprojekt für klimafreundliche Mobilität zwischen Bahnhof und Hochschule. Teste das neue Bike-Sharing-System – exklusiv für Android-Nutzer*innen.
-  </p>
+  <div class="content">
+    <div class="section">
+      <h3>Worum geht's?</h3>
+      <ul>
+        <li>Neue App im Aufbau</li>
+        <li>Strecke: vom Bahnhof zur Hochschule</li>
+        <li>Dein Feedback zählt!</li>
+      </ul>
+    </div>
 
-  <!-- <a type="button" class="button disabled" href="#">App jetzt herunterladen</a> //-->
-  <a type="button" class="button disabled" href="#">App bald verfügbar</a> 
+    <div class="section">
+      <h3>Was ist das?</h3>
+      <p>Witch Bike ist ein Pilotprojekt des KlimaPlanReal zur nachhaltigen Mobilität. Ziel ist es, den Weg vom Bahnhof zur Hochschule klimafreundlicher und flexibler zu gestalten.</p>
+    </div>
 
-  <p class="more-info">
-    Wenn ihr mehr über das Projekt erfahren wollt, findet ihr Informationen auf der offiziellen Website des KlimaPlanReal:<br>
-    <a href="https://www.hs-harz.de/klimaplanreal" target="_blank">www.hs-harz.de/klimaplanreal</a>
-  </p>
+    <div class="section">
+      <h3>Warum solltest du mitmachen?</h3>
+      <ul>
+        <li>Du unterstützt klimafreundliche Mobilität</li>
+        <li>Du hilfst bei der Weiterentwicklung der App</li>
+        <li>Du bekommst als Tester*in exklusiven und kostenlosen Zugang zum Pilotsystem</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h3>Für wen und wie lange?</h3>
+      <ul>
+        <li>Für Studierende und Mitarbeiter*innen der Hochschule</li>
+        <li>Bis zum Ende der Lehrveranstaltungen</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h3>Das wirst du brauchen:</h3>
+      <ul>
+        <li>Smartphone (Nur Android)</li>
+        <li>Bereitschaft regelmäßig vom Bahnhof zur Hochschule zu radeln</li>
+        <li>Offenheit für kurze Feedbacks und konstruktive Kritik</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h3>Jetzt mitmachen</h3>
+      <p>Scanne den QR Code und melde dich als Tester an:</p>
+      <img src="witchbike-final-qr.png" alt="QR Code zur Anmeldung" style="max-width: 200px;">
+      <p><strong>Ansprechpartner:</strong> Max Mustermann<br>
+      <strong>Email:</strong> mmustermann@hs-harz.de</p>
+    </div>
+  </div>
+
+  <div class="logos">
+    <img src="FONA-S-de_Logo_rgb.png" alt="FONA Logo">
+    <img src="KlimaPlanReal_Projektlogo-Förderlogo.png" alt="KlimaPlanReal und BMBF Logo">
+  </div>
 
   <footer>
     © Witch Bike – Hochschule Harz

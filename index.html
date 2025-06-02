@@ -8,7 +8,7 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #d1ea71;
+      background: linear-gradient(to right, #c5e1a5 50%, #aed581 50%);
       color: #1a3e14;
       text-align: center;
     }
@@ -40,6 +40,9 @@
       margin: 0 auto;
       padding: 20px;
       text-align: left;
+      background-color: rgba(255, 255, 255, 0.85);
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
 
     .section {
@@ -63,6 +66,22 @@
     .logos img {
       max-height: 80px;
       height: auto;
+    }
+
+    .button-link {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 15px 30px;
+      background-color: #66bb6a;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 1.2em;
+      transition: background 0.3s ease;
+    }
+
+    .button-link:hover {
+      background-color: #558b2f;
     }
 
     footer {
@@ -127,6 +146,10 @@
       <h3>Kontakt</h3>
       <p><strong>Ansprechpartner:</strong> Prof. Dr. Phillip Schaller<br>
       <strong>Email:</strong> witchbike@hs-harz.de</p>
+    </div>
+
+    <div class="section" style="text-align: center;">
+      <a class="button-link" href="nutzungsanleitung.html">Zur Nutzeranleitung</a>
     </div>
   </div>
 

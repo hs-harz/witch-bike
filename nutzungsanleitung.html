@@ -23,14 +23,11 @@
       text-align: center;
     }
 
-    .instructions {
-      background: white;
-      border: 1px solid #c5e1a5;
-      padding: 20px;
-      height: 400px;
-      overflow-y: scroll;
-      margin-bottom: 20px;
-      border-radius: 10px;
+    .pdf-container {
+      width: 100%;
+      height: 800px;
+      margin: 20px 0;
+      border: none;
     }
 
     .actions {
@@ -62,33 +59,7 @@
     <h1>Nutzeranleitung</h1>
     <p>Bitte lies dir die folgende Anleitung sorgfältig durch, bevor du die App herunterlädst.</p>
 
-    <div class="instructions" id="scrollBox">
-      <h2>1. Installation der App</h2>
-      <ul>
-        <li>Android Handy mit aktiviertem Bluetooth erforderlich</li>
-        <li>APK herunterladen und Berechtigung zum Installieren geben</li>
-        <li>App "WhichBike" erscheint nach Installation</li>
-      </ul>
-
-      <h2>2. Umgang mit den Fahrrädern</h2>
-      <p><strong>2.1 Identifikation:</strong> Seriennummer am Schloss (z. B. „Horst78“)</p>
-      <p><strong>2.2 Entsperren:</strong> Schloss öffnen, Kette entfernen und verstauen</p>
-      <p><strong>2.3 Absperren:</strong> Kette wieder anschließen, dann über App „Ausleihe beenden“</p>
-      <p><strong>2.4 Probleme:</strong> Schloss ggf. manuell nachdrücken und erneut versuchen</p>
-
-      <h2>3. App-Bedienung</h2>
-      <ul>
-        <li>Login über Hochschul-Account</li>
-        <li>Standort und Fahrrad auswählen</li>
-        <li>„go to Rent“ und „starte Ausleihe“ klicken</li>
-        <li>Pause über „Pause starten“ und „Pause beenden“</li>
-        <li>Beenden über „beende Ausleihe“</li>
-      </ul>
-
-      <h2>4. Bugreport</h2>
-      <p>Bitte Fehler über folgendes Formular melden:<br>
-      <a href="https://docs.google.com/forms/d/1RAfCEFDaPuk4PNw3z1z5kjkT3k8XM3ejA9mFEdAVqmY" target="_blank">Bugreport Formular</a></p>
-    </div>
+    <iframe src="einweisung.pdf" class="pdf-container"></iframe>
 
     <div class="actions">
       <label class="confirm">
